@@ -5,7 +5,7 @@ import requests
 import lxml
 
 from lxml import objectify
-from lxml.builder import E
+# from lxml.builder import E
 
 
 # if len(sys.argv) !=3:
@@ -30,8 +30,8 @@ root = lxml.objectify.fromstring(xml_output)
 
 for host in root.RESPONSE.HOST_LIST.HOST:
 	findDNS = host.find('DNS')
-	hostIP = host.IP; 
-	hostQID = host.DETECTION_LIST.DETECTION.QID;
+    hostIP = host.IP;
+    hostQID = host.DETECTION_LIST.DETECTION.QID;
 	hostResults = str(host.DETECTION_LIST.DETECTION.RESULTS)
 	firstDetected = host.DETECTION_LIST.DETECTION.FIRST_FOUND_DATETIME
 	lastDetected = host.DETECTION_LIST.DETECTION.LAST_FOUND_DATETIME

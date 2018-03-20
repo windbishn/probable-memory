@@ -8,7 +8,7 @@ import xml.etree.ElementTree as ET
 
 
 from lxml import objectify
-from lxml.builder import E
+# from lxml.builder import E
 
 # Setup connection to QualysGuard API.
 qgc = qualysapi.connect('../../config.ini')

@@ -5,8 +5,8 @@ import requests
 import lxml
 import xml.etree.ElementTree as ET
 
-from lxml import objectify
-from lxml.builder import E
+# from lxml import objectify
+# from lxml.builder import E
 
 
 # if len(sys.argv) !=3:
