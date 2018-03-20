@@ -5,10 +5,6 @@ import requests
 import lxml
 import xml.etree.ElementTree as ET
 
-# 
-
-
-
 # if len(sys.argv) != 2:
         # print 'Usage: python qid_host_list_detection.py #QID. Multiple QIDs are comma separated.'
         # sys.exit(2)
@@ -38,12 +34,7 @@ with open('filename.csv', 'wb') as csvfile:
 				hostIP = host.find('IP').text
 				findDNS = host.find('DNS')
 				findOS = host.find('OS')
-				for detection in root.iter('DETECTION'):
-					QID = detection.find('QID').text
-					port = detection.find('PORT').text
-					results = detection.find('RESULTS').text
-					status = detection.find('STATUS').text
-							
+
 				if findOS is None:
 					OS = "noOS"
 				else:
@@ -54,7 +45,14 @@ with open('filename.csv', 'wb') as csvfile:
 				else:
 					DNS = host.find('DNS').text 
 
+			for detection in root.iter('DETECTION'):
+				QID = detection.find('QID').text
+				port = detection.find('PORT').text
+				results = detection.find('RESULTS').text
+				status = detection.find('STATUS').text
+							
 				row = [hostIP, DNS, OS, QID, port, results, status]	
 
 				# print hostIP, ",",DNS,",",OS,",",QID,",",port,",",results,",",status
+
 				csv_writer.writerow(row)
