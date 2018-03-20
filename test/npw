@@ -5,8 +5,8 @@ import requests
 import lxml
 import xml.etree.ElementTree as ET
 
-from lxml import objectify
-from lxml.builder import E
+# from lxml import objectify
+# from lxml.builder import E
 
 
 # if len(sys.argv) != 2:
@@ -28,7 +28,7 @@ root = ET.fromstring(xml_output)
 
 filename = sys.argv[1]
 
-with open(filename.'csv', 'wb') as csvfile:
+with open('filename.csv', 'wb') as csvfile:
 			writer = csv.writer(csvfile)	
 			row = ['hostIP', 'DNS', 'OS', 'QID', 'port', 'results', 'status']
 			writer.writerow(row)
@@ -45,12 +45,12 @@ with open(filename.'csv', 'wb') as csvfile:
 				
 				
 				if findOS is None:
-					OS = "noOS";
+					OS = "noOS"
 				else:
 					OS = host.find('OS').text
 				
 				if findDNS is None:
-					DNS = "noDNS";
+					DNS = "noDNS"
 				else:
 					DNS = host.find('DNS').text 
 					
