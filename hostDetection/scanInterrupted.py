@@ -29,21 +29,21 @@ root = ET.fromstring(xml_output)
 filename = sys.argv[1]
 
 with open('filename.csv', 'wb') as csvfile:
-			writer = csv.writer(csvfile)	
+			csv_writer = csv.writer(csvfile)	
 			row = ['hostIP', 'DNS', 'OS', 'QID', 'port', 'results', 'status']
-			writer.writerow(row)
+			csv_writer.writerow(row)
 
 			for host in root.iter('HOST'):
-			   # print child.tag, child.text
+			#   print child.tag, child.text
 				hostIP = host.find('IP').text
 				findDNS = host.find('DNS')
 				findOS = host.find('OS')
-				QID = host.find('QID')
-				port = host.find('PORT')
-				results = host.find('RESULTS')
-				status = host.find('STATUS')
-				
-				
+				for detection in root.iter('DETECTION'):
+					QID = detection.find('QID').text
+					port = detection.find('PORT').text
+					results = detection.find('RESULTS').text
+					status = detection.find('STATUS').text
+							
 				if findOS is None:
 					OS = "noOS"
 				else:
@@ -53,14 +53,8 @@ with open('filename.csv', 'wb') as csvfile:
 					DNS = "noDNS"
 				else:
 					DNS = host.find('DNS').text 
-					
-				
-				
-				print hostIP, ",",DNS,",",OS,",",QID,",",port,",",results,",",status
-				writer.writerow(row)
-	
-	
-# print xml_output
 
+				row = [hostIP, DNS, OS, QID, port, results, status]	
 
-
+				# print hostIP, ",",DNS,",",OS,",",QID,",",port,",",results,",",status
+				csv_writer.writerow(row)
