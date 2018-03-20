@@ -5,8 +5,8 @@ import requests
 import lxml
 import xml.etree.ElementTree as ET
 
-# from lxml import objectify
-# from lxml.builder import E
+# 
+
 
 
 # if len(sys.argv) != 2:
@@ -15,7 +15,7 @@ import xml.etree.ElementTree as ET
 
 	
 # Setup connection to QualysGuard API.
-qgc = qualysapi.connect('config.ini')
+qgc = qualysapi.connect('../../config.ini')
 
 # API v2 call: QID Host List Detection
 
