@@ -24,7 +24,7 @@ root = ET.fromstring(xml_output)
 
 filename = sys.argv[1]
 
-with open('filename.csv', 'wb') as csvfile:
+with open('filename2.csv', 'wb') as csvfile:
 			csv_writer = csv.writer(csvfile)	
 			row = ['hostIP', 'DNS', 'OS', 'QID', 'port', 'results', 'status']
 			csv_writer.writerow(row)
@@ -45,14 +45,13 @@ with open('filename.csv', 'wb') as csvfile:
 				else:
 					DNS = host.find('DNS').text 
 
-			for detection in root.iter('DETECTION'):
-				QID = detection.find('QID').text
-				port = detection.find('PORT').text
-				results = detection.find('RESULTS').text
-				status = detection.find('STATUS').text
-							
+				port = host.find('DETECTION_LIST').find('DETECTION').find('PORT').text
+				QID = host.find('DETECTION_LIST').find('DETECTION').find('QID').text
+				status = host.find('DETECTION_LIST').find('DETECTION').find('STATUS').text
+				results = host.find('DETECTION_LIST').find('DETECTION').find('RESULTS').text
+				
 				row = [hostIP, DNS, OS, QID, port, results, status]	
-
+				
 				# print hostIP, ",",DNS,",",OS,",",QID,",",port,",",results,",",status
 
 				csv_writer.writerow(row)
