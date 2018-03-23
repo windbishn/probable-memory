@@ -31,72 +31,47 @@ root = ET.fromstring(xml_output)
 
 # root = lxml.objectify.fromstring(xml_output)
 
-for host in root.iter('HOST'):
-    # print host.tag, host.text
-    hostIP = host.find('IP').text
-    findDNS = host.find('DNS')
-    findOS = host.find('OS')
-    for detection in root.iter('DETECTION'):
-        QID = detection.find('QID').text
-        hostResults = str(detection.find('RESULTS').text)
-        firstDetected = detection.find('FIRST_FOUND_DATETIME').text
-        lastDetected = detection.find('LAST_FOUND_DATETIME').text
-        resultArray = hostResults.splitlines( )
-        durationTime = resultArray[0]
-        # startTime = resultArray[2] 
-        # endTime = resultArray[4]
+filename = sys.argv[1]
 
-		
-        if findOS is None:
-				OS = "noOS"
-        else:
-				OS = host.find('OS').text
+with open(filename +'.csv', 'wb') as csvfile:
+            csv_writer = csv.writer(csvfile)	
+            row = ['hostIP', 'DNS', 'OS', 'firstDetected', 'lastDetected', 'QID', 'durationTime', 'startTime', 'endTime']
+            csv_writer.writerow(row)
 
-        if findDNS is None:
-				DNS = "noDNS"
-        else:
-				DNS = host.find('DNS').text 
+            for host in root.iter('HOST'):
+                hostIP = host.find('IP').text
+                findDNS = host.find('DNS')
+                findOS = host.find('OS')
+                
+                if findOS is None:
+                  OS = "noOS"
+                else:
+                  OS = host.find('OS').text
+                  
+                if findDNS is None:
+                  DNS = "noDNS"
+                else:
+                  DNS = host.find('DNS').text
+              
+                firstDetected = host.find('DETECTION_LIST').find('DETECTION').find('FIRST_FOUND_DATETIME').text
+                lastDetected = host.find('DETECTION_LIST').find('DETECTION').find('LAST_FOUND_DATETIME').text
+                QID = host.find('DETECTION_LIST').find('DETECTION').find('QID').text
+                # status = str(host.find('DETECTION_LIST').find('DETECTION').find('STATUS').text
+                hostResults = str(host.find('DETECTION_LIST').find('DETECTION').find('RESULTS').text)
+                resultArray = hostResults.splitlines()
+                durationTime = resultArray[0]
+                startTime = resultArray[2]
+                endTime = resultArray[4]
 
-                   
-    print hostIP
-    print DNS
-    print firstDetected
-    print lastDetected
-    print "duration= ",durationTime
-    # print "start= ",startTime
-    # print "end= ",endTime
-	
+                row = [hostIP, DNS, OS, firstDetected, lastDetected, QID, durationTime, startTime, endTime]
+                
+                csv_writer.writerow(row)
 
-# for host in root.RESPONSE.HOST_LIST.HOST:
-# 	findDNS = host.find('DNS')
-# 	hostIP = host.IP; 
-# 	hostQID = host.DETECTION_LIST.DETECTION.QID;
-# 	hostResults = str(host.DETECTION_LIST.DETECTION.RESULTS)
-# 	firstDetected = host.DETECTION_LIST.DETECTION.FIRST_FOUND_DATETIME
-# 	lastDetected = host.DETECTION_LIST.DETECTION.LAST_FOUND_DATETIME
-# 	resultArray = hostResults.splitlines( )
-# 	durationTime = resultArray[0]
-# 	startTime = resultArray[2] 
-# 	endTime = resultArray[4]
-
-# 	print hostIP
-# 	print firstDetected
-# 	print lastDetected
-# 	print "duration= ",durationTime
-# 	print "start= ",startTime
-# 	print "end= ",endTime
-	
-	
-	# if findDNS is None:
-		# DNS = "noDNS";
-	# else:
-		# DNS = host.DNS;
-	
-
-# Open and write to file. Use last commandline argument for filename
-
-# f_csv = open(sys.argv[-1], 'w') 
-# f_csv.write(ret)
-# f_csv.close()
-	
-
+                # print hostIP
+                # print DNS
+                # print firstDetected
+                # print lastDetected
+                # print "duration= ",durationTime
+                # print "start= ",startTime
+                # print "end= ",endTime
+    
