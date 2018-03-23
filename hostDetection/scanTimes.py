@@ -2,12 +2,7 @@ import qualysapi
 import sys
 import csv
 import requests
-import lxml
 import xml.etree.ElementTree as ET
-
-# from lxml import objectify
-# from lxml.builder import E
-
 
 # if len(sys.argv) !=3:
         # print 'Usage: python vm_hostDetection.py #AssetGroupID AssetGroup_name.csv. Multiple asset group entries are comma separated'.
@@ -28,8 +23,6 @@ xml_output = qgc.request(call, parameters)
 root = ET.fromstring(xml_output)
 
 # print xml_output
-
-# root = lxml.objectify.fromstring(xml_output)
 
 filename = sys.argv[1]
 

@@ -2,7 +2,6 @@ import qualysapi
 import sys
 import csv
 import requests
-import lxml
 import xml.etree.ElementTree as ET
 
 # if len(sys.argv) != 2:
@@ -24,7 +23,7 @@ root = ET.fromstring(xml_output)
 
 filename = sys.argv[1]
 
-with open('filename2.csv', 'wb') as csvfile:
+with open(filename +'.csv', 'wb') as csvfile:
 			csv_writer = csv.writer(csvfile)	
 			row = ['hostIP', 'DNS', 'OS', 'QID', 'port', 'results', 'status']
 			csv_writer.writerow(row)
