@@ -4,6 +4,7 @@ import csv
 import requests
 import re
 import xml.etree.ElementTree as ET
+from datetime import datetime
 
 # Setup connection to QualysGuard API.
 qgc = qualysapi.connect('../../config.ini')
@@ -20,7 +21,10 @@ root = ET.fromstring(xml_output)
 # agList_output = qgc.request(call, parameters)
 # assetgroupList = lxml.objectify.fromstring(agList_output)
 
-with open('agList.csv', 'wb') as csvfile:
+timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+
+
+with open('agList-'+ timestamp +'.csv', 'wb') as csvfile:
 		writer = csv.writer(csvfile)
 		row = ['name', 'ID']
 		writer.writerow(row)
