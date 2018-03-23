@@ -1,4 +1,5 @@
 # Outputfiles #
 ###############
 *.csv
-hostDetection/test.txt
+
+.gitignore

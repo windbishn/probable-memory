@@ -2,9 +2,7 @@ import qualysapi
 import csv
 import logging
 import sys
-import lxml
-from lxml import objectify
-from lxml.builder import E
+import xml.etree.ElementTree as ET
 
 #Read facility IP information from SolarWinds export
 
@@ -43,6 +41,6 @@ with open('acc_out.csv', 'r') as file:
 		xml_output = qgc.request(call, parameters)	
 		
 		# Let's objectify the xml_output string.  
-		root = lxml.objectify.fromstring(xml_output)
+		root = ET.fromstring(xml_output)
 		
 		print xml_output		
