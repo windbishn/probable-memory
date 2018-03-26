@@ -3,10 +3,11 @@ import sys
 import csv
 import requests
 import xml.etree.ElementTree as ET
+from datetime import datetime
 
-# if len(sys.argv) !=3:
-        # print 'Usage: python vm_hostDetection.py #AssetGroupID AssetGroup_name.csv. Multiple asset group entries are comma separated'.
-        # sys.exit(2)
+if len(sys.argv) !=2:
+        print "Usage: python scanTimes.py AssetGroupID. Multiple asset group entries are comma separated."
+        sys.exit(2)
 
 	
 # Setup connection to QualysGuard API.
@@ -14,19 +15,20 @@ qgc = qualysapi.connect('../../config.ini')
 #
 
 # API v2 call: Host List Detection
-
 call = '/api/2.0/fo/asset/host/vm/detection'
 parameters= {'action': 'list', 'qids': '45038', 'show_igs': '1', 'ag_ids': sys.argv[1], 'truncation_limit': '0'}
 
+# Call the API and store the result in xml_output.
 xml_output = qgc.request(call, parameters)
 
+# Reading the data from a string, fromstring() parses XML from a string directly into an Element
 root = ET.fromstring(xml_output)
 
-# print xml_output
+timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
 
 filename = sys.argv[1]
 
-with open(filename +'.csv', 'wb') as csvfile:
+with open(filename +'_'+ timestamp + '.csv', 'wb') as csvfile:
             csv_writer = csv.writer(csvfile)	
             row = ['hostIP', 'DNS', 'OS', 'firstDetected', 'lastDetected', 'QID', 'durationTime', 'startTime', 'endTime']
             csv_writer.writerow(row)
@@ -59,12 +61,5 @@ with open(filename +'.csv', 'wb') as csvfile:
                 row = [hostIP, DNS, OS, firstDetected, lastDetected, QID, durationTime, startTime, endTime]
                 
                 csv_writer.writerow(row)
-
-                # print hostIP
-                # print DNS
-                # print firstDetected
-                # print lastDetected
-                # print "duration= ",durationTime
-                # print "start= ",startTime
-                # print "end= ",endTime
+                
     

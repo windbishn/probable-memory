@@ -38,9 +38,10 @@ with open('acc_out.csv', 'r') as file:
 		call = '/api/2.0/fo/asset/group/'
 		parameters = {'action': 'add', 'title': displayname, 'ips': subnetaddressCIDR, 'business impact': 'High', 'appliance_ids': '394123'}
 		
+		# Call the API and store the result in xml_output.
 		xml_output = qgc.request(call, parameters)	
 		
-		# Let's objectify the xml_output string.  
+		# Reading the data from a string, fromstring() parses XML from a string directly into an Element
 		root = ET.fromstring(xml_output)
 		
 		print xml_output		
