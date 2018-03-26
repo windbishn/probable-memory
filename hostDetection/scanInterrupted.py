@@ -5,9 +5,9 @@ import requests
 import xml.etree.ElementTree as ET
 from datetime import datetime
 
-if len(sys.argv) != 2:
-        print "Usage: python scanInterrupted.py QID. Multiple QIDs are comma separated."
-        sys.exit(2)
+# if len(sys.argv) != 2:
+#         print "Usage: python scanInterrupted.py QID. Multiple QIDs are comma separated."
+#         sys.exit(2)
 
 # Setup connection to QualysGuard API.
 qgc = qualysapi.connect('../../config.ini')
