@@ -1,0 +1,7 @@
+# assetgroupList
+
+# assetPurge
+
+# assetgroupCleanup
+
+# assetgroupHostList
