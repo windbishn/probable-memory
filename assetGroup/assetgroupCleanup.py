@@ -20,7 +20,7 @@ ag_output = qgc.request(call, parameters)
 # Reading the data from a string, fromstring() parses XML from a string directly into an Element
 root = ET.fromstring(ag_output)
 
-timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+timestamp = datetime.now().strftime("%Y%m%d.%H%M%S")
 
 with open('assetgroupcleanupList_'+timestamp+'.csv', 'wb') as csvfile:
 		writer = csv.writer(csvfile)
@@ -39,8 +39,3 @@ with open('assetgroupcleanupList_'+timestamp+'.csv', 'wb') as csvfile:
 			
 				row = [notinUse.group(0), assetgroupID]
 				writer.writerow(row)
-
-				
-					
-					
-					

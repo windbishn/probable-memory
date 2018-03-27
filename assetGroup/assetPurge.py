@@ -1,6 +1,7 @@
 import qualysapi, sys
 import xml.etree.ElementTree as ET
-# from lxml import objectify, etree
+from lxml import objectify
+from lxml import etree
 
 # Connect to QualysGuard.
 qgc = qualysapi.connect()
@@ -11,7 +12,7 @@ number_of_days = sys.argv[1]
 # Request assets older than number_of_days.
 assets = qgc.request('asset_search.php', {'last_scan': 'not_within:%s' % number_of_days, 'target_asset_groups': 'All'})
 
-root = ET.fromstring(assets)
+root = objectify.fromstring(assets)
 
 # Parse assets XML for list of IPs.
 

@@ -19,7 +19,7 @@ xml_output = qgc.request(call, parameters)
 # Reading the data from a string, fromstring() parses XML from a string directly into an Element
 root = ET.fromstring(xml_output)
 
-timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+timestamp = datetime.now().strftime("%Y%m%d.%H%M%S")
 
 
 with open('assetgroupList_'+timestamp+'.csv', 'wb') as csvfile:
