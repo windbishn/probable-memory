@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE SCAN SYSTEM "https://qualysguard.qg3.apps.qualys.com/scan-1.dtd">
+<SCAN value="scan/1522900930.90404">
+
+<HEADER>
+  <KEY value="USERNAME">adven3mw</KEY>
+  <KEY value="COMPANY"><![CDATA[Adventist Health]]></KEY>
+  <KEY value="DATE">2018-04-05T04:02:10Z</KEY>
+  <KEY value="TITLE"><![CDATA[ACC MIL-Network Equipment Scan]]></KEY>
+  <KEY value="TARGET"><![CDATA[192.168.1.70,192.168.2.70]]></KEY>
+  <KEY value="EXCLUDED_TARGET"><![CDATA[N/A]]></KEY>
+  <KEY value="DURATION">00:11:23</KEY>
+  <KEY value="SCAN_HOST">ADCVUTLSECLX003 (Scanner 10.0.14-1, Vulnerability Signatures 2.4.301-3)</KEY>
+  <KEY value="NBHOST_ALIVE">2</KEY>
+  <KEY value="NBHOST_TOTAL">2</KEY>
+  <KEY value="REPORT_TYPE">Scheduled</KEY>
+  <KEY value="OPTIONS"><![CDATA[Light TCP scan, Light UDP scan, Authoritative Option: Off, parallel ML scaling disabled for appliances, Load balancer detection OFF, Windows Authentication ON, Unix Authentication ON, SNMP Authentication ON, Ignore firewall-generated RST packets, Ignore firewall-generated SYN-ACK packets, ICMP Host Discovery, Overall Performance: Normal, Hosts to Scan in Parallel - External Scanners: 15, Hosts to Scan in Parallel - Scanner Appliances: 30, Total Processes to Run in Parallel: 10, HTTP Processes to Run in Parallel: 10, Packet (Burst) Delay: Medium, Intensity: Normal]]></KEY>
+  <KEY value="STATUS">FINISHED</KEY>
+  <ASSET_GROUPS>
+    <ASSET_GROUP>
+      <ASSET_GROUP_TITLE><![CDATA[ACC MIL-GRP-Network Equipment]]></ASSET_GROUP_TITLE>
+    </ASSET_GROUP>
+  </ASSET_GROUPS>
+  <OPTION_PROFILE>
+    <OPTION_PROFILE_TITLE option_profile_default="0"><![CDATA[AIT - Lite - Cisco Scan]]></OPTION_PROFILE_TITLE>
+  </OPTION_PROFILE>
+</HEADER>
+
+<IP value="192.168.1.70" name="mil-nwn-mpls-01.network.ahss.org">
+  <OS><![CDATA[Cisco IOS XE 03.13.03.S - Extended Support Release]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 672 seconds
+
+Start time: Thu, Apr 05 2018, 04:05:03 GMT
+
+End time: Thu, Apr 05 2018, 04:16:15 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="192.168.2.70" name="No registered hostname">
+  <OS><![CDATA[Cisco IOS XE 03.13.03.S - Extended Support Release]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 577 seconds
+
+Start time: Thu, Apr 05 2018, 04:05:03 GMT
+
+End time: Thu, Apr 05 2018, 04:14:40 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+</SCAN>
+<!-- CONFIDENTIAL AND PROPRIETARY INFORMATION. Qualys provides the QualysGuard Service "As Is," without any warranty of any kind. Qualys makes no warranty that the information contained in this report is complete or error-free. Copyright 2018, Qualys, Inc. //--> 

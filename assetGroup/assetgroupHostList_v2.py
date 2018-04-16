@@ -7,7 +7,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime
 
 # Setup connection to QualysGuard API.
-qgc = qualysapi.connect('../../config.ini')
+qgc = qualysapi.connect('../../config.qcrc')
 
 ip_file = csv.reader(open('APsubnets.csv', 'r')) 
  

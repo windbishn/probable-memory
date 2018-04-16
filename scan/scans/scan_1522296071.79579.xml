@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE SCAN SYSTEM "https://qualysguard.qg3.apps.qualys.com/scan-1.dtd">
+<SCAN value="scan/1522296071.79579">
+
+<HEADER>
+  <KEY value="USERNAME">adven3mw</KEY>
+  <KEY value="COMPANY"><![CDATA[Adventist Health]]></KEY>
+  <KEY value="DATE">2018-03-29T04:01:11Z</KEY>
+  <KEY value="TITLE"><![CDATA[FNS-Network Equipment Scan]]></KEY>
+  <KEY value="TARGET"><![CDATA[10.188.0.75-10.188.0.76,10.188.10.2,10.188.10.166,10.188.10.168-10.188.10.174,10.188.10.176,10.188.10.180,10.188.10.183-10.188.10.186,10.188.10.188,10.188.10.192,10.188.10.194,10.188.10.198,10.188.10.200,10.188.10.202,10.188.10.208,10.188.10.210,10.188.22.4,192.168.1.188,192.168.2.188]]></KEY>
+  <KEY value="EXCLUDED_TARGET"><![CDATA[N/A]]></KEY>
+  <KEY value="DURATION">00:26:38</KEY>
+  <KEY value="SCAN_HOST">FNSVUTLSECLX001 (Scanner 10.0.14-1, Vulnerability Signatures 2.4.296-2)</KEY>
+  <KEY value="NBHOST_ALIVE">28</KEY>
+  <KEY value="NBHOST_TOTAL">28</KEY>
+  <KEY value="REPORT_TYPE">Scheduled</KEY>
+  <KEY value="OPTIONS"><![CDATA[Light TCP scan, Light UDP scan, Authoritative Option: Off, parallel ML scaling disabled for appliances, Load balancer detection OFF, Unix Authentication ON, SNMP Authentication ON, Ignore firewall-generated RST packets, Ignore firewall-generated SYN-ACK packets, ICMP Host Discovery, Overall Performance: Normal, Hosts to Scan in Parallel - External Scanners: 15, Hosts to Scan in Parallel - Scanner Appliances: 30, Total Processes to Run in Parallel: 10, HTTP Processes to Run in Parallel: 10, Packet (Burst) Delay: Medium, Intensity: Normal]]></KEY>
+  <KEY value="STATUS">FINISHED</KEY>
+  <ASSET_GROUPS>
+    <ASSET_GROUP>
+      <ASSET_GROUP_TITLE><![CDATA[FNS-GRP-Network Equipment]]></ASSET_GROUP_TITLE>
+    </ASSET_GROUP>
+  </ASSET_GROUPS>
+  <OPTION_PROFILE>
+    <OPTION_PROFILE_TITLE option_profile_default="0"><![CDATA[AIT - Lite - Cisco Scan]]></OPTION_PROFILE_TITLE>
+  </OPTION_PROFILE>
+</HEADER>
+
+<IP value="10.188.0.75" name="fns-nvr-telcom-01.multihosp.net">
+  <OS><![CDATA[Cisco IOS XE 16.06.02]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 944 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:39 GMT
+
+End time: Thu, Mar 29 2018, 04:18:23 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.0.76" name="fns-nvr-telcom-02.multihosp.net">
+  <OS><![CDATA[Cisco IOS XE 16.06.02]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 924 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:43 GMT
+
+End time: Thu, Mar 29 2018, 04:18:07 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.10.2" name="No registered hostname">
+  <OS><![CDATA[Cisco IOS 15.2(1)SY0a, RELEASE SOFTWARE (fc3)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 1191 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:35 GMT
+
+End time: Thu, Mar 29 2018, 04:22:26 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.10.166" name="No registered hostname">
+  <OS><![CDATA[Cisco IOS XE 03.07.03E RELEASE SOFTWARE (fc3)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 1462 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:38 GMT
+
+End time: Thu, Mar 29 2018, 04:27:00 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.10.168" name="No registered hostname">
+  <OS><![CDATA[Cisco IOS XE 03.07.03E RELEASE SOFTWARE (fc3)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 1424 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:42 GMT
+
+End time: Thu, Mar 29 2018, 04:26:26 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.10.169" name="No registered hostname">
+  <OS><![CDATA[Cisco IOS XE 03.07.03E RELEASE SOFTWARE (fc3)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 1421 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:40 GMT
+
+End time: Thu, Mar 29 2018, 04:26:21 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.10.170" name="No registered hostname">
+  <OS><![CDATA[Cisco IOS XE 03.07.03E RELEASE SOFTWARE (fc3)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 1428 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:42 GMT
+
+End time: Thu, Mar 29 2018, 04:26:30 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.10.171" name="No registered hostname">
+  <OS><![CDATA[Cisco IOS XE 03.07.03E RELEASE SOFTWARE (fc3)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 1407 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:39 GMT
+
+End time: Thu, Mar 29 2018, 04:26:06 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.10.172" name="No registered hostname">
+  <OS><![CDATA[Cisco IOS XE 03.07.03E RELEASE SOFTWARE (fc3)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 1414 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:42 GMT
+
+End time: Thu, Mar 29 2018, 04:26:16 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.10.173" name="No registered hostname">
+  <OS><![CDATA[Cisco IOS XE 03.07.03E RELEASE SOFTWARE (fc3)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 1357 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:44 GMT
+
+End time: Thu, Mar 29 2018, 04:25:21 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.10.174" name="No registered hostname">
+  <OS><![CDATA[Cisco IOS XE 03.07.03E RELEASE SOFTWARE (fc3)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 1403 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:41 GMT
+
+End time: Thu, Mar 29 2018, 04:26:04 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.10.176" name="No registered hostname">
+  <OS><![CDATA[Cisco IOS XE 03.07.03E RELEASE SOFTWARE (fc3)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 1387 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:37 GMT
+
+End time: Thu, Mar 29 2018, 04:25:44 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.10.180" name="No registered hostname">
+  <OS><![CDATA[Cisco IOS XE 03.07.03E RELEASE SOFTWARE (fc3)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 1411 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:37 GMT
+
+End time: Thu, Mar 29 2018, 04:26:08 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.10.183" name="No registered hostname">
+  <OS><![CDATA[Cisco IOS XE 03.07.03E RELEASE SOFTWARE (fc3)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 1358 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:39 GMT
+
+End time: Thu, Mar 29 2018, 04:25:17 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.10.184" name="No registered hostname">
+  <OS><![CDATA[Cisco IOS XE 03.06.06E RELEASE SOFTWARE (fc1)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 491 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:41 GMT
+
+End time: Thu, Mar 29 2018, 04:10:52 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.10.185" name="fns-nas-f4c08-01.network.ahss.org">
+  <OS><![CDATA[Cisco IOS XE 03.06.06E RELEASE SOFTWARE (fc1)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 1342 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:43 GMT
+
+End time: Thu, Mar 29 2018, 04:25:05 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.10.186" name="No registered hostname">
+  <OS><![CDATA[Cisco IOS XE 03.06.06E RELEASE SOFTWARE (fc1)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 1372 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:43 GMT
+
+End time: Thu, Mar 29 2018, 04:25:35 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.10.188" name="No registered hostname">
+  <OS><![CDATA[Cisco IOS XE 03.06.06E RELEASE SOFTWARE (fc1)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 1588 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:37 GMT
+
+End time: Thu, Mar 29 2018, 04:29:05 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.10.192" name="No registered hostname">
+  <OS><![CDATA[Cisco IOS XE 03.06.06E RELEASE SOFTWARE (fc1)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 495 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:38 GMT
+
+End time: Thu, Mar 29 2018, 04:10:53 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.10.194" name="No registered hostname">
+  <OS><![CDATA[Cisco IOS XE 03.06.06E RELEASE SOFTWARE (fc1)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 502 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:40 GMT
+
+End time: Thu, Mar 29 2018, 04:11:02 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.10.198" name="No registered hostname">
+  <OS><![CDATA[Cisco IOS XE 03.06.06E RELEASE SOFTWARE (fc1)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 714 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:38 GMT
+
+End time: Thu, Mar 29 2018, 04:14:32 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.10.200" name="No registered hostname">
+  <OS><![CDATA[Cisco IOS XE 03.06.05b.E RELEASE SOFTWARE (fc1)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 1322 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:35 GMT
+
+End time: Thu, Mar 29 2018, 04:24:37 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.10.202" name="No registered hostname">
+  <OS><![CDATA[Cisco IOS XE 03.07.03E RELEASE SOFTWARE (fc3)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 1393 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:37 GMT
+
+End time: Thu, Mar 29 2018, 04:25:50 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.10.208" name="No registered hostname">
+  <OS><![CDATA[Cisco IOS XE 03.06.06E RELEASE SOFTWARE (fc1)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 944 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:37 GMT
+
+End time: Thu, Mar 29 2018, 04:18:21 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.10.210" name="No registered hostname">
+  <OS><![CDATA[Cisco IOS XE 03.07.03E RELEASE SOFTWARE (fc3)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 1334 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:38 GMT
+
+End time: Thu, Mar 29 2018, 04:24:52 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="10.188.22.4" name="fns-nfw-asa-01.network.ahss.org">
+  <OS><![CDATA[Cisco ASA 9.1(3)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 373 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:36 GMT
+
+End time: Thu, Mar 29 2018, 04:08:49 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="192.168.1.188" name="fns-nwn-wan-01.network.ahss.org">
+  <OS><![CDATA[Cisco IOS XE 15.2(4)S6, RELEASE SOFTWARE (fc4)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 557 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:40 GMT
+
+End time: Thu, Mar 29 2018, 04:11:57 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+<IP value="192.168.2.188" name="fns-nwn-wan-02.network.ahss.org">
+  <OS><![CDATA[Cisco IOS XE 15.2(4)S6, RELEASE SOFTWARE (fc4)]]></OS>
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 563 seconds
+
+Start time: Thu, Mar 29 2018, 04:02:38 GMT
+
+End time: Thu, Mar 29 2018, 04:12:01 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+</IP>
+</SCAN>
+<!-- CONFIDENTIAL AND PROPRIETARY INFORMATION. Qualys provides the QualysGuard Service "As Is," without any warranty of any kind. Qualys makes no warranty that the information contained in this report is complete or error-free. Copyright 2018, Qualys, Inc. //--> 

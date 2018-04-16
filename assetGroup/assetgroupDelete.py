@@ -6,9 +6,9 @@ import xml.etree.ElementTree as ET
 from datetime import datetime
 
 # Setup connection to QualysGuard API.
-qgc = qualysapi.connect('../../config.ini')
+qgc = qualysapi.connect('../../config.qcrc')
 
-agCleanup_file = csv.reader(open('assetgroupcleanupList_20180402.160147.csv', 'r'))
+agCleanup_file = csv.reader(open('assetgroupcleanupList_20180403.105846.csv', 'r'))
 
 for row in agCleanup_file:
     #defining variables

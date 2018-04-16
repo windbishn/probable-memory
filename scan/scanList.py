@@ -44,5 +44,3 @@ with open('scanList_'+ timestamp + '.csv', 'ab') as csvfile:
 
             row = [apsubnetScan.group(0), scanRef, scanTarget, scanDuration, scanType]
             writer.writerow(row)
-                        
-		

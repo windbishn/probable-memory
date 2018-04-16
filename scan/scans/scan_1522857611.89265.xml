@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE SCAN SYSTEM "https://qualysguard.qg3.apps.qualys.com/scan-1.dtd">
+<SCAN value="scan/1522857611.89265">
+
+<ERROR number="3509">No host alive</ERROR>
+
+<HEADER>
+  <KEY value="USERNAME">adven3mw</KEY>
+  <KEY value="COMPANY"><![CDATA[Adventist Health]]></KEY>
+  <KEY value="DATE">2018-04-04T16:00:11Z</KEY>
+  <KEY value="TITLE"><![CDATA[FIS-Voice Discovery Scan]]></KEY>
+  <KEY value="TARGET"><![CDATA[10.142.4.0-10.142.5.255,10.142.64.0-10.142.69.255,10.142.71.0-10.142.79.255,10.142.81.0-10.142.85.255,10.142.246.0-10.142.247.255]]></KEY>
+  <KEY value="EXCLUDED_TARGET"><![CDATA[N/A]]></KEY>
+  <KEY value="DURATION">01:46:54</KEY>
+  <KEY value="SCAN_HOST">ADCVULTSECLX501 (Scanner 10.0.14-1, Vulnerability Signatures 2.4.301-2); ADCVUTLSECLX502 (Scanner 10.0.14-1, Vulnerability Signatures 2.4.301-2)</KEY>
+  <KEY value="NBHOST_ALIVE">977</KEY>
+  <KEY value="NBHOST_TOTAL">6144</KEY>
+  <KEY value="REPORT_TYPE">Scheduled</KEY>
+  <KEY value="OPTIONS"><![CDATA[Custom TCP Port List (none), Custom UDP Port List (none), parallel ML scaling disabled for appliances, Load balancer detection OFF, Ignore firewall-generated RST packets, Ignore firewall-generated SYN-ACK packets, ICMP Host Discovery, Overall Performance: Normal, Hosts to Scan in Parallel - External Scanners: 15, Hosts to Scan in Parallel - Scanner Appliances: 30, Total Processes to Run in Parallel: 10, HTTP Processes to Run in Parallel: 10, Packet (Burst) Delay: Medium, Intensity: Normal, Host Alive Check ON]]></KEY>
+  <KEY value="STATUS">NOVULNSFOUND</KEY>
+  <ASSET_GROUPS>
+    <ASSET_GROUP>
+      <ASSET_GROUP_TITLE><![CDATA[FIS-GRP-Voice Subnets]]></ASSET_GROUP_TITLE>
+    </ASSET_GROUP>
+  </ASSET_GROUPS>
+  <OPTION_PROFILE>
+    <OPTION_PROFILE_TITLE option_profile_default="0"><![CDATA[AIT - Host Discovery]]></OPTION_PROFILE_TITLE>
+  </OPTION_PROFILE>
+</HEADER>
+</SCAN>
+<!-- CONFIDENTIAL AND PROPRIETARY INFORMATION. Qualys provides the QualysGuard Service "As Is," without any warranty of any kind. Qualys makes no warranty that the information contained in this report is complete or error-free. Copyright 2018, Qualys, Inc. //--> 
