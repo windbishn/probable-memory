@@ -1,3 +1,5 @@
+#test sync    
+#apple
 import qualysapi
 import sys
 import csv
