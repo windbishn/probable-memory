@@ -18,7 +18,7 @@ for row in subnet_file:
 	# print subnetRange
 
 	# Setup connection to QualysGuard API.
-	qgc = qualysapi.connect('../../config.qcrc')
+	qgc = qualysapi.connect('../../config.ini')
 
 	# API v2 Host List: list host alreay scanned. 
 	call = '/api/2.0/fo/asset/host/'

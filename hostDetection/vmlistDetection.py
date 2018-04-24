@@ -23,6 +23,7 @@ xml_output = qgc.request(call, parameters)
 # Reading the data from a string, fromstring() parses XML from a string directly into an Element
 root = ET.fromstring(xml_output)
 
+
 timestamp = datetime.now().strftime("%Y%m%d.%H%M%S")
 
 # print xml_output
@@ -33,7 +34,7 @@ with open('drupal' +'_'+ timestamp +'.csv', 'wb') as csvfile:
 			row = ['hostIP', 'DNS', 'OS', 'QID', 'port', 'results', 'status']
 			csv_writer.writerow(row)
 
-			for host in root.iter('HOST'):
+			for child in root.iter('HOST'):
 			#   print child.tag, child.text
 				hostIP = host.find('IP').text
 				findDNS = host.find('DNS')
